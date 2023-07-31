@@ -1,0 +1,25 @@
+div{
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+}
+#frame{
+    text-align: center;
+}
+
+/*
+
+*Object
+{ frame : "value", lname : "shah" }
+   key  :  value ,  key  :  value
+
+*Number
+a=1
+
+
+
+function myfunction()
+{
+    const num1=document.getElementById("num1").value;
+       (variable)    const=constant  if(num1%2==0)

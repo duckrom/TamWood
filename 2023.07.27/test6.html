@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ 
+            width: 400px;
+        }
+        label{
+            float: left;
+            font-weight: bold;
+        }
+        input{
+            float: right;
+        }
+    </style>
+    <script>
+        function myfunction(){
+            var un = document.getElementById("un").value;
+            var pw = document.getElementById("pw").value;
+            var slice = pw.slice(pw.length-4,pw.length);
+            var npw = pw=slice
+            //var substr = pw.substring(pw.length-4,pw.length);
+            //var npw = pw+substr
+
+            document.write("Username is ",un+"<br>");
+            document.write("Password is ",pw+"<br>"+"<br>"+"<br>");
+            document.write("The New Password is ",npw);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Login Page</h1>
+            <label>User name</label>
+            <input type="text" id="un" name="User name">
+            <br>
+            <br>
+            <label>Password</label>
+            <input type="text" id="pw" name="Password">
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </div>
+</body>
+</html>

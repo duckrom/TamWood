@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                document.getElementById("txt1").value=document.URL;
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Screen URL is</label>
+            <input type="text" id="txt1" name="txturl" style="width: 1200px;">
+            <input type="button" id="btn1" value="submit" onclick="myfunction()">
+        </form>
+    </body>
+</html>

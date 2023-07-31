@@ -1,0 +1,8 @@
+html{
+    text-align: center;
+}
+#pagename{
+    font-weight: bold;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}

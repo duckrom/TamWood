@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                var fname = document.getElementById("fname").value;
+                //first character == last character
+                if(fname[0] == fname[(fname.length)-1]){
+                    document.write("First and last characters are same")
+                }
+                else{
+                    document.write("First and last characters are not same")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter your First Name</label>
+            <input type="text" id="fname" name="txt1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                var a=0;
+                var b=0;
+                var c=0;
+
+                a = document.getElementById("num1").value;
+                b = document.getElementById("num2").value;
+
+                c=a;
+                a=b;
+                b=c;
+
+                document.write("The New Value of Number [1] is " + a + " " + "<br>" + "The New Value of Number [2] is " + b + " ");
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Enter Number 1</label>
+            <input type="number" id="num1" name="num">
+            <br>
+            <br>
+            <label for="">Enter Number 2</label>
+            <input type="number" id="num2" name="num">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </body>
+</html>

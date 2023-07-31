@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            var resulttemp;
+            function myfunction(){
+                var Celsiustemp = document.getElementById("txt1").value; //25 degree Celsius
+                resulttemp = (Celsiustemp * 1.8) + 32;
+                document.write(resulttemp);
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Celsius Tempreture</label>
+            <input type="number" id="txt1" name="txturl">
+            <input type="button" id="btn1" value="submit" onclick="myfunction()">
+        </form>
+    </body>
+</html>

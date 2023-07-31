@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <style>
+            div{ 
+                width: 400px;
+            }
+            label{
+                float: left;
+                font-weight: bold;
+            }
+            input{
+                float: right;
+            }
+        </style>
+        <script>
+            function myfunction(){
+                var fn = document.getElementById("fn").value;
+                var ln = document.getElementById("ln").value;
+                var ad = document.getElementById("ad").value;
+                var ph = document.getElementById("ph").value;
+                var po = document.getElementById("po").value;
+                var ci = document.getElementById("ci").value;
+                var co = document.getElementById("co").value;
+
+                if(fn == ''){
+                    document.write("Please type your First Name"+"<br>");
+                }
+                if(ln == ''){
+                    document.write("Please type your Last Name"+"<br>");
+                }
+                if(ad == ''){
+                    document.write("Please type your Address"+"<br>");
+                }
+                if(ph == ''){
+                    document.write("Please type your Phone Number"+"<br>");
+                }
+                if(po == ''){
+                    document.write("Please type your Postal Code"+"<br>");
+                }
+                if(ci == ''){
+                    document.write("Please type your City"+"<br>");
+                }
+                if(co == ''){
+                    document.write("Please type your Country"+"<br>");
+                }
+
+                /*
+                if(fn){
+                    document.write("First Nmae : "+fn+"<br>");
+                }
+                else{
+                    document.write("Please type your First Name"+"<br>");
+                }
+                if(ln){
+                    document.write("Last Name : "+ln+"<br>");
+                }
+                else{
+                    document.write("Please type your Last Name"+"<br>");
+                }
+                if(ad){
+                    document.write("Address : "+ad+"<br>");
+                }
+                else{
+                    document.write("Please type your Address"+"<br>");
+                }
+                if(ph){
+                    document.write("Phone Number : "+ph+"<br>");
+                }
+                else{
+                    document.write("Please type your Phone Number"+"<br>");
+                }
+                if(po){
+                    document.write("Postal Code : "+po+"<br>");
+                }
+                else{
+                    document.write("Please type your Postal Code"+"<br>");
+                }
+                if(ci){
+                    document.write("City : "+ci+"<br>");
+                }
+                else{
+                    document.write("Please type your City"+"<br>");
+                }
+                if(co){
+                    document.write("Country : "+co+"<br>");
+                }
+                else{
+                    document.write("Please type your Country"+"<br>");
+                }
+                */
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <h1>Enter your Information</h1>
+                <label>First name</label>
+                <input type="text" id="fn" name="First name">
+                <br>
+                <label>Last name</label>
+                <input type="text" id="ln" name="Last name">
+                <br>
+                <label>Address</label>
+                <input type="text" id="ad" name="Address">
+                <br>
+                <label>Phone number</label>
+                <input type="text" id="ph" name="Phone number">
+                <br>
+                <label>Postal code</label>
+                <input type="text" id="po" name="Postal code">
+                <br>
+                <label>City</label>
+                <input type="text" id="ci" name="City">
+                <br>
+                <label>Country</label>
+                <input type="text" id="co" name="Country">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+            </form>
+        </div>
+    </body>
+</html>

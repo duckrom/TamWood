@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                var num1 = Number(document.getElementById("num1").value);
+
+                for(var i=1; i<=num1; i++){
+                    for(var j=num1; j>=i; j--){
+                        document.write("*")
+                    }
+                    document.write("<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Enter Number</label>
+            <input type="text" id="num1" name="num">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </body>
+</html>

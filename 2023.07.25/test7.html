@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x=0;
+        var y=0;
+        var z=0;
+        var c=0;
+        var total=0;
+
+        function calcu(){
+            const x=document.getElementById("x").value;
+            const y=document.getElementById("y").value;
+            const z=document.getElementById("z").value;
+            const c=document.getElementById("c").value;
+            const total=document.getElementById("total").value;
+            const result=(Number(x)*Number(y))+(Number(z)*Number(c));
+            document.getElementById("total").value=("$")+result;
+        }
+    </script>
+</head>
+<body>
+    <H1>Payment</h1>
+    <p id="item1">Item 1</p>
+    <input type="number" id="x" name="x">
+    $<input type="number" id="y" name="y">
+    <p id="item2">Item 2</p>
+    <input type="number" id="z" name="z">
+    $<input type="number" id="c" name="c">
+    <br>
+    <br>
+    <input type="button" id="btn1" value="calculate" onclick="calcu()">
+    <br>
+    <br>
+    <input type="text" id="total" name="total">
+</body>
+</html>

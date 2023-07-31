@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+
+                for(var i=num1+3; i<=num2; i+=3){
+                    document.write(i+"<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Min Number</label>
+            <input type="number" id="num1" name="num">
+            <br>
+            <br>
+            <label for="">Max Number</label>
+            <input type="number" id="num2" name="num">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </body>
+</html>

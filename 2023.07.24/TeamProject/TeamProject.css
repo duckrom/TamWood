@@ -1,0 +1,121 @@
+.parallax{
+    background-image: url(./tennis.jpeg);
+    background-repeat: no-repeat;
+    height: 2000px;
+    width: 1700px;
+    margin: auto;
+}
+#toptitle{
+    padding-top: 700px;
+    margin-top: -80px;
+    color: red;
+    text-align: center;
+    font-size: 60px;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+#toptitlecontents{
+    padding-top: 70px;
+    margin-top: -110px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#maintitle{
+    padding-top: -200px;
+    margin: -160px;
+    color: rgb(255, 8, 0);
+    margin-left: 80px;
+    font-size: 420px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contents{
+    margin: 30px;
+    margin-top: -250px;
+}
+
+#contents0{
+    color: rgb(255, 8, 0);
+    font-size: 80px;
+    text-align: right;
+    font-style: italic;
+}
+#contents0-1{
+    color: rgb(255, 8, 0);
+    font-size: 200px;
+    text-align: right;
+    margin: -130px;
+    margin-right: 0px;
+}
+#contents0-2{
+    color: rgb(255, 8, 0);
+    font-size: 95px;
+    text-align: right;
+}
+#contents1{
+    color: rgb(255, 8, 0);
+    font-size: 100px;
+    text-align: right;
+}
+#contents1-1{
+    margin-right: 30px;
+    margin-left: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+#contents2{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: right;
+}
+#contents2-1{
+    margin-right: 30px;
+    margin-left: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+#contents3{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: right;
+}
+#contents3-1{
+    margin-right: 30px;
+    margin-left: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+#contents4{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: right;
+}
+#contents4-1{
+    margin-right: 30px;
+    margin-left: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+#contents5{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: right;
+}
+#contents5-1{
+    margin-right: 30px;
+    margin-left: 1000px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: right;
+}
+div{
+    margin-top: 100px;
+    padding: 100px;
+}

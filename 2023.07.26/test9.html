@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document URL using JS</title>
+        <script>
+            function myfunction(){
+                const num1 = Number(document.getElementById("num1").value);
+                const num2 = Number(document.getElementById("num2").value);
+                
+                const result = (2*num1)+(2*num2);
+                document.write("The perimeter of the rectanle is ", result);
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Enter Lengh</label>
+            <input type="text" id="num1" name="num">
+            <br>
+            <label for="">Enter Width</label>
+            <input type="text" id="num2" name="num">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="button" id="btn1" value="submit" onclick="myfunction()" style="height: 200px; width: 400px;">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+    <style>
+        body{background-image: url(file:///C:/Users/disfe/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/Web%20Developer/2023.07/2023.07.13/horse%20cat.gif); background-repeat: no-repeat;background-size: cover;}
+    </style>
+    <head>
+        <h1 style="color:pink; background-color: black;"><strong>S</strong>urvey <strong>F</strong>orm</h1>
+    </head>
+    <body>
+        <form>
+        <label style="color: red; background-color: black;"><strong>Customer Name</strong></label>
+        <br>
+        <input type="name" id="name" name="name" placeholder="First Name">
+        <input type="name" id="name" name="name" placeholder="Middle Name(if you have)">
+        <input type="name" id="name" name="name" placeholder="Last Name">
+        <br>
+        <br>
+        <label style="color: orange; background-color: black;"><strong>Address</strong></label>
+        <br>
+        <input type="address" id="address" name="address" style="width:400px" placeholder="Please Type Your Address">
+        <br>
+        <input type="address" id="address" name="address" style="width:400px" placeholder="(optional) More detaile">
+        <br>
+        <br>
+        <label style="color: yellow; background-color: black;"><strong>City</strong></label>
+        <br>
+        <input type="city" id="city" name="city" Placeholder="City">
+        <br>
+        <br>
+        <label style="color: green; background-color: black;"><strong>Phone Number</strong></label>
+        <br>
+        <input type="tel" id="phonenum" name="mobilenum" paHesn="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+        <br>
+        <br>
+        <label style="color: blue; background-color: black;"><strong>Birth-date</strong></label>
+        <br>
+        <input type="y" id="year" name="year" placeholder="yyyy">
+        <input type="m" id="month" name="month" placeholder="mm">
+        <input type="d" id="day" name="day" placeholder="dd">
+        <br>
+        <br>
+        <label style="color: indigo; background-color: black;"><strong>Status in Canada</strong></label>
+        <br>
+        <select>
+            <option value="--Select your Status--">--Select your Status--</option>
+            <option value="Worker">Worker</option>
+            <option value="Student">Student</option>
+            <option value="PR">PR</option>
+            <option value="etc.">etc.</option>
+        </select>
+        <br>
+        <br>
+        <label style="color: purple; background-color: black;"><strong>Gender</strong></label>
+        <br>
+        <table>
+            <tr>
+                <td><input type="checkbox" name="Male" value="Male" style="background-color: white;">Male</td>
+                <td><input type="checkbox" name="Female" value="Female" style="background-color: white;">Female</td>
+                <td><input type="checkbox" name="Transgender" value="Transgender" style="background-color: white;">Transgender</td>
+                <td><input type="checkbox" name="Gender Neutral" value="Gender Neutral" style="background-color: white;">Gender Neutral</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Non-Binary" value="Non-Binary">Non-Binary</td>
+                <td><input type="checkbox" name="Agender" value="Agender">Agender</td>
+                <td><input type="checkbox" name="Pangender" value="Pangender">Pangender</td>
+                <td><input type="checkbox" name="Genderqueer" value="Genderqueer">Genderqueer</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="Two-Spirittwo-spirit" value="Two-Spirit">Two-Spirit</td>
+                <td><input type="checkbox" name="Third Gender" value="Third Gender">Third Gender</td>
+                <td><input type="checkbox" name="All" value="All">All</td>
+                <td><input type="checkbox" name="Combination" value="Combination">Combination</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <label style="color: aqua; background-color: black;"><strong>Skills</strong></label>
+        <br>
+        <input type="radio" name="chk_info" value="None" checked>None
+        <input type="radio" name="chk_info" value="HTML">HTML
+        <input type="radio" name="chk_info" value="CSS">CSS
+        <input type="radio" name="chk_info" value="Java">Java
+        <input type="radio" name="chk_info" value="etc.">etc.
+        <input type="text" id="cs_channel_etc_view" name="cs_channel"  class="form-control" style="width:300px" placeholder="If you choose etc., please type in this box." />
+        </form>
+    </body>
+</html>
