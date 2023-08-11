@@ -1,0 +1,14 @@
+    .card{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: auto;
+        width: 500px;
+    }
+    label{
+        margin-left: 50px;
+        float: left;
+    }
+    input{
+        margin-right: 50px;
+        float: right;
+    }

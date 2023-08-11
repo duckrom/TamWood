@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+    function myfunction(){
+        var f = document.signup;
+
+		if(f.fname.value == "") {
+            alert("Enter your First Name");
+            f.name.focus();
+            return false;
+        }
+        
+		if(f.lname.value == "") {
+            alert("Enter your Last Name");
+            f.name.focus();
+            return false;
+        }
+
+		if(f.eml.value == "") {
+            alert("Enter your E-mail");
+            f.eml.focus();
+            return false;
+        }
+
+		if(f.pass.value == "") {
+            alert("Enter your create password");
+            f.pass.focus();
+            return false;
+        }
+
+        if(f.Cpass.value == "" ) {
+            alert("Enter your confirm password");
+            f.Cpass.focus();
+            return false;
+        }
+
+		if(f.pass.value !=f.Cpass.value){
+		 alert("Please check your confirm password");
+		 f.Cpass.focus();
+		 f.Cpass.value= "";
+		 return false;
+		}
+
+        if(f.adr.value == "") {
+            alert("Enter your Address");
+            f.adr.focus();
+            return false;
+        }
+
+        if(f.phon.value == "") {
+            alert("Enter your Phone Number");
+            f.phon.focus();
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="./DP_logo_black.png" alt="Logo" height="60px"></a>
+                <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>-->
+                <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link"><h5>About</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./dates.html" class="nav-link"><h5>Schedule</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./tickets.html" class="nav-link"><h5>Tickets</h5></a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success mr-5" type="button" onclick="window.location.href='./signup.html'">Sign-up</button>
+                <!--</div>-->
+            </div>
+        </nav>
+    </div>
+    <div class="container mx-auto text-center mt-5">
+        <div class="container-md">
+            <div class="card">
+                <div class="card-title"><h1><strong>Sign Up</strong></h1></div>
+                <div class="card-text">
+                    <form name="signup" class="form-inline">
+                        <br>
+                        <label for="fname" class="form-inline">First Name</label>
+                        <input type="text" id="fname" class="form-inline" placeholder="First Name">
+                        <br><br>
+                        <label for="lname" class="form-inline">Last Name</label>
+                        <input type="text" id="lname" class="form-inline" placeholder="Last Name">
+                        <br><br>
+                        <label for="email" class="form-inline">E-mail</label>
+                        <input type="text" id="eml" class="form-inline" placeholder="ABC@example.com">
+                        <br><br>
+                        <label for="password" class="form-inline">Create Password</label>
+                        <input type="text" id="pass" class="form-inline" maxlength="8" placeholder="********">
+                        <br><br>
+                        <label for="Cpassword" class="form-inline">Confirm Password</label>
+                        <input type="text" id="Cpass" class="form-inline" maxlength="8" placeholder="********">
+                        <br><br>
+                        <label for="address" class="form-inline">Address</label>
+                        <input type="text" id="adr" class="form-inline" placeholder="1234 ABC St.">
+                        <br><br>
+                        <label for="phonenum" class="form-inline">Phone Number</label>
+                        <input type="text" id="phon" class="form-inline" placeholder="(123)456-7890">
+                        <br><br>
+                        <button type="button" class="btn btn-primary" onclick="myfunction()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer class="bg-secondary">
+            <div class="container">
+                <a style="text-decoration:none" href="https://www.facebook.com/" class="fab fa-facebook fa-2x text-light" target="_blank"></a>
+                <a style="text-decoration:none" href="https://www.instagram.com/" class="fab fa-instagram fa-2x text-light" target="_blank"></a>
+                <a style="text-decoration:none" href="https://www.twitter.com/" class="fab fa-twitter fa-2x text-light" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
+</html>
