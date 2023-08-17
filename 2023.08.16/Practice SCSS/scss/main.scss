@@ -1,0 +1,52 @@
+@import './variable';
+
+//generic function
+@function fontweight($weightname) {
+    @return map-get($font-weight , $weightname);
+}
+
+@mixin styleflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin screenresolution() {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+//font style
+@mixin fontstyle() {
+    font-style: italic;
+    font-size: 30px;
+}
+
+@mixin theme($lighttheme){
+    @if $lighttheme{
+        background-color: lighten($primary-color, 100%);
+        color: darken($secondary-color, 100%);
+    }
+}
+
+.main {
+    @include theme(false);
+    @include screenresolution() {
+        background-color: green;
+    }
+
+    background-color: $primary-color;
+
+    &_child {
+        @include styleflex();
+
+        &_1 {
+            @include fontstyle();
+            color: $secondary-color;
+            width: 80%;
+            margin: 0 auto;
+            font-weight: fontweight(bolder);
+        }
+    }
+}

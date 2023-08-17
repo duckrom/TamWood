@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: purple;
+  color: white;
+  font-weight: 800;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.main_paragraph {
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.light {
+  background: white;
+  color: black;
+}
+@media (max-width: 800px) {
+  .light {
+    flex-direction: column;
+    background-color: green;
+  }
+}/*# sourceMappingURL=main.css.map */

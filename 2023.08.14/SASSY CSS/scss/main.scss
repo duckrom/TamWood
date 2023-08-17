@@ -1,0 +1,68 @@
+//$background-color: purple;
+//$text-color: white;
+//$font-weight: (
+//    "regular":400,
+//    "advenced":500,
+//    "bold":700,
+//    "italic":800
+//);
+
+@import './variables';
+@import './resets';
+
+@function weights($weight-name) {
+    @return map-get($font-weight, $weight-name);
+}
+
+@function flexdirection ($direction) {
+    @return $direction;
+}
+
+@mixin flexcontainer {
+    justify-content: center;
+    font-style: italic;
+    align-items: center;
+}
+
+@mixin mobile {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin theme($light-theme : true) {
+    @if $light-theme {
+        background: lighten($background-color, $amount: 100%);
+        color: darken($text-color, $amount: 100%);
+    }
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-weight: weights(italic);
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: flexdirection(row);
+
+    //row = 좌우, column = 상하
+    &_paragraph {
+        @include flexcontainer;
+        margin-left: 100px;
+        //        justify-content: center;
+        //        font-style: italic;
+    }
+}
+
+.light {
+    @include theme(true); //or ($light-theme : true)
+    @include mobile {
+        flex-direction: column;
+        background-color: green;
+    }
+}
