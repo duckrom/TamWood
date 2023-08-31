@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function wichbutton(event){
+            // console.log(this);
+            var a = ["Red", "Green", "Blue", "White", "Blackl"]
+
+            var r = a[0];
+            var g = a[1];
+            var b = a[2];
+            var w = a[3];
+            var bl = a[4];
+            var result = [red] 
+            //push adding a value, pop stands for deleting a value.
+            console.log(typeof(r+" "+g+" "+b+" "+w+" "+bl).toLocaleUpperCase);
+            a.copyWithin(result, 3)
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1" name="num1"/>
+    <p id="t1">ABCD</p>
+    <button class="btn-info" onmousedown="wichbutton(event)">click</button> 
+</body>
+</html>

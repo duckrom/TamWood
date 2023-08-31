@@ -1,0 +1,19 @@
+.oc {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+
+    .ft {
+        font-family: fantasy;
+        font-size: 40px;
+    }
+
+    &_btn {
+        padding: 50px;
+        width: 850px;
+        background-color: skyblue;
+        color: blue;
+        border: 5px solid purple;
+    }
+}
